@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.head
+{
+  background-color: transparent;
+  overflow-x: hidden;
+}
+.bar
+{
+  display: none;
+}
+nav {
+    height: 100px;
+    width: 100%;
+    padding:5px 5px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures space between logo and button */Optional: Add padding for spacing */
+}
+
+label.logo {
+    color: black;
+    font-size: 25px;
+    line-height: 80px;
+    font-weight: bold;
+    padding: 0; /* Remove extra padding */
+}
+  
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+  }
+  
+  .checkbtn {
+    font-size: 22px;
+    color: black;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+}
+  
+  #check {
+    display: none;
+  }
+  .click
+  {
+    height: 5%;
+  }
+  .start
+  {
+    white-space: nowrap;
+    width: fit-content;
+    border-radius:10px;
+    font-weight:bold;
+    background-color: #e47d22;
+  }
+  .more
+  {
+    white-space: nowrap;
+    border-radius:10px;
+    font-weight:bold;
+    background-color: white;
+  }
+  footer
+  {
+    width: 100vw;
+    justify-content: center;
+    position: relative;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+  }
+  .fa-icon
+  {
+    width: 2em;
+    height: 2em;
+    vertical-align: middle;
+  }
+  .home,.save,.account
+  {
+    -webkit-text-fill-color: #e47d22;
+  }
+  .menu-icon
+  {
+    
+  }
