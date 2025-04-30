@@ -1,0 +1,8 @@
+@keyframes slideEffect {
+    0% {
+      background-position: 100% center; /* Start off-screen to the right */
+    }
+    100% {
+      background-position: 0% center; /* Slide to the center */
+    }
+  }

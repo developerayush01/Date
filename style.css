@@ -15,6 +15,59 @@ body
   background-color: transparent;
   overflow-x: hidden;
 }
+
+/* Login-form */
+.form-container {
+  position: absolute;
+  top: 50%;
+background-color: rgba(255, 255, 255, 0.8);
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+max-width: 400px;
+width: 100%;
+height:40%;
+}
+
+.form-container h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.form-container label {
+display: block;
+margin-bottom: 5px;
+font-weight: bold;
+}
+.text
+{
+text-align:center;
+}
+
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="submit"]       
+{
+width: 70%;
+padding: 10px;
+margin-bottom: 20px;
+margin-left:33.33;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.form-container input[type="submit"] {
+background-color: #007BFF;
+color: white;
+border: none;
+cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+background-color: #0056b3;
+}
+/* NavBar */
+
 .bar
 {
   display: none;
@@ -22,20 +75,24 @@ body
 nav {
     height: 100px;
     width: 100%;
-    padding:5px 5px 5px 5px;
+    padding:40px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures space between logo and button */Optional: Add padding for spacing */
+    justify-content: space-between;
 }
 
-label.logo {
+.logo {
     color: black;
     font-size: 25px;
     line-height: 80px;
     font-weight: bold;
-    padding: 0; /* Remove extra padding */
+    padding: 0;
 }
-  
+  .logo-button{
+    color: black;
+    font-weight: bold;
+    padding: 0;
+  }
   nav ul {
     float: right;
     margin-right: 20px;
@@ -88,22 +145,72 @@ label.logo {
   {
     width: 100vw;
     justify-content: center;
-    position: relative;
-    height: fit-content;
+    height: 50px;
+    display: flex;
+    align-items: stretch;
     position: absolute;
     bottom: 0;
   }
   .fa-icon
   {
-    width: 2em;
-    height: 2em;
+    width: 100%;
+    height: 100%;
     vertical-align: middle;
   }
   .home,.save,.account
   {
-    -webkit-text-fill-color: #e47d22;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    color: #e47d22;
+  }
+  .botton-menu
+  {
+    height: 2em;
+    width: auto;
   }
   .menu-icon
   {
-    
+    fill: #e47d22;
+    color: #e47d22;
   }
+
+  /* Navbar End */
+/* banner */
+.head
+{
+  position: relative;
+}
+.banner{
+  height: 100%;
+  width: 100%;
+  /* background-image: url("images/banner/pexels-picjumbo-com-55570-196664.jpg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+  border: 1px solid red;
+  animation: slideEffect 2s ease-in-out;
+  transition: 2s ease-in-out;
+}
+.banner::after
+{
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+.head-txt
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: large;
+  font-weight: bolder;
+  z-index: 1;
+}
+/* banner -end */
