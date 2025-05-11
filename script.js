@@ -5,7 +5,7 @@ const bannerImage=[
     "images/banner/pexels-shihabnymur-712520.jpg",
     "images/banner/pexels-trungnguyenphotog-1630068.jpg",
 ]
-// banner.style.backgroundImage=`url('${bannerImage[0]}')`;
+banner.style.backgroundImage=`url('${bannerImage[0]}')`;
 let index=0
 setInterval(() => {
         banner.style.backgroundImage = `url('${bannerImage[index]}')`; // change image

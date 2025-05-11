@@ -6,9 +6,10 @@
     <title>Date</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">           
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
-    <link rel="stylesheet" href="keyframe.css">              
+    <!-- <link rel="stylesheet" href="keyframe.css">    -->
 </head>
 <body>
 <!-- Login Form -->
@@ -16,7 +17,7 @@
 
 <!-- Login Form End -->
 
-<section class="head h-75">
+<section class="head h-100">
         <nav>
             <!-- Checkbox for toggling menu -->
             <input type="checkbox" id="check">
@@ -41,14 +42,17 @@
            <button class="logo-button rounded-2 p-1">Login</button>
           </div>
           </nav>
-          <section>
-          </section>
-          <section class="head h-100">
+          <section class="head-img h-75">
             <div class="head-txt">
               <p></p> Express your Love</p>
             </div>
-            <div class="banner">
+            <div class="owl-carousel owl-theme banner" id="acer">
+              <div><img src="images/banner/pexels-picjumbo-com-55570-196664.jpg" alt=""></div>
+              <div><img src="images/banner/pexels-pixabay-415351.jpg" alt=""></div>
+              <div><img src="images/banner/pexels-shihabnymur-712520.jpg" alt=""></div>
+              <div><img src="images/banner/pexels-trungnguyenphotog-1630068.jpg" alt=""></div>
             </div>
+          </section>
           </section>
           <!-- Footer -->
 
@@ -79,6 +83,9 @@
             <div class="account p-0 col-3 d-flex text-center align-items-center justify-content-center"><i class="fa-solid fa-user fa-2x"></i></div>
           </footer>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-          <script src="script.js"></script>
+          <script src="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+          <script src="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+          <script src="carousel.js"></script>
+          <!-- <script src="script.js"></script> -->
 </body>
 </html>
