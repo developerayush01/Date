@@ -4,10 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body
 {
     height: 100vh;
-    width: 100vw;
     position: relative;
 }
 .head
@@ -17,6 +17,7 @@ body
 }
 .head-img
 {
+  position: relative;
   height: 30%;
 }
 
@@ -126,7 +127,6 @@ nav {
   .swiper {
   width: 100%;
   height: 95%;
-
   position: relative;
 }
 .swiper-slide{
@@ -151,9 +151,6 @@ nav {
   top: 50%;
   right: 2%;
 }
-.swiper-wrapper{
-  border: 1px solid red;
-}
 
   /* Slider */
   #check {
@@ -163,14 +160,7 @@ nav {
   {
     height: 5%;
   }
-  .start
-  {
-    white-space: nowrap;
-    width: fit-content;
-    border-radius:10px;
-    font-weight:bold;
-    background-color: #e47d22;
-  }
+
   .more
   {
     white-space: nowrap;
@@ -255,8 +245,108 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  font-size: large;
+  font-size: 70px;
   font-weight: bolder;
-  z-index: 1;
+  color: rgb(251, 255, 2);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  z-index: 1000;
+}
+.start{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.start>button{
+ font-size: large;
+ padding: 1ch;
+ background-color: lightgoldenrodyellow;
 }
 /* banner -end */
+
+.main-body{
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #fff5f7, #ffeaea);
+}
+  .tips {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f2e8df;
+  border-top: 4px solid #d4af37;
+
+}
+.tips:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+.tips>p{
+  font-family: 'Noto Sans', sans-serif;
+  font-size: x-large;
+  font-weight: 900;
+}
+.blog{
+  font-family: 'Lato', sans-serif;
+  font-size: large;
+  font-weight: 500;
+  letter-spacing: 0.2ch;
+}
+
+.stu {
+  text-align: center;
+  width: 100%;
+  margin-left: 50%;
+  margin-top: 5%;
+  font-size: 19px;
+  color: grey;
+  transform: translate(-50%, 0);
+}
+.h3 {
+  color: black;
+  font-size: 35px;
+  font-family: poppins;
+}
+.feed {
+  width: 100%;
+  font-size: 20px;
+  font-family: poppins;
+}
+.feed2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  padding: 1%;
+  background-color: #ceaeae;
+  border-radius: 15px;
+}
+.feed1 img {
+  border-radius: 50%;
+  margin-left: 5%;
+  height: 60px;
+  width: 60px;
+}
+.feed11 {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.f1 {
+  font-size: 14px;
+}
+h4 {
+  font-size: bold;
+}
+/* review */
+.feed {
+  width: 100%;
+  height: 95%;
+  position: relative;
+}
+/* review */

@@ -4,7 +4,7 @@ const swiper = new Swiper('.swiper', {
   loop: true,
   
   autoplay: {
-      delay: 2000, // 2 seconds between slides
+      delay: 3000, // 2 seconds between slides
       disableOnInteraction: false, // keeps autoplay running even when user interacts
     },
     speed: 800, // smooth transition

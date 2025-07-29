@@ -87,3 +87,10 @@
       display: flex;
     }
   }
+
+  @media (max-width:768px){
+    .swiper{
+        width: 100%;
+        padding: 0;
+    }
+}
