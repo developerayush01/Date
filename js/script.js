@@ -1,13 +1,25 @@
-let banner=document.querySelector(".banner");
-const bannerImage=[
-    "images/banner/pexels-picjumbo-com-55570-196664.jpg",
-    "images/banner/pexels-pixabay-415351.jpg",
-    "images/banner/pexels-shihabnymur-712520.jpg",
-    "images/banner/pexels-trungnguyenphotog-1630068.jpg",
-]
-banner.style.backgroundImage=`url('${bannerImage[0]}')`;
-let index=0
-setInterval(() => {
-        banner.style.backgroundImage = `url('${bannerImage[index]}')`; // change image
-        index = (index + 1) % bannerImage.length;
-}, 2000);
+function action() {
+    const overlay = document.querySelector(".overlay");
+    const form = document.querySelector(".form-container");
+
+    overlay.style.background = "transparent";
+    overlay.style.backdropFilter = "blur(5px)";
+    overlay.style.opacity = "0.5";
+    overlay.style.zIndex = "1000";
+    overlay.style.display = "block";
+    form.style.display = "block";
+    document.body.style.overflow = "hidden";
+
+    // Remove any previous click listeners to avoid stacking
+    overlay.onclick = function(e) {
+        // Only close if clicked directly on overlay, not on form
+        if (e.target === overlay) {
+            overlay.style.background = "";
+            overlay.style.backdropFilter = "";
+            overlay.style.opacity = "";
+            overlay.style.display = "none";
+            form.style.display = "none";
+            document.body.style.overflow = "";
+        }
+    };
+}

@@ -93,4 +93,41 @@
         width: 100%;
         padding: 0;
     }
+    .feed {
+  width: 100%;
+  font-size: 20px;
+  font-family: poppins;
+}
+.feed1, .swiper-slide {
+  display: flex;
+  align-items: stretch;
+}
+.feed2{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #ceaeae;
+  flex-direction: column;
+  height: 100%;
+  border-radius: 15px;
+  border: 1px solid red;
+}
+.feed2 img {
+  border-radius: 50%;
+  margin-left: 5%;
+  height: 40%;
+  width: 50%;
+  object-fit: fill;
+}
+.feed11 {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.f1 {
+  font-size: 14px;
+}
+h4 {
+  font-size: bold;
+}
 }

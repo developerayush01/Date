@@ -10,6 +10,122 @@ body
     height: 100vh;
     position: relative;
 }
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter:none;
+  z-index:0;
+}
+/* Form */
+.form-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1001;
+  height: fit-content;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: black;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: black;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+
+        .form-container input[type="email"],
+        .form-container input[type="password"],
+        .form-container input[type="submit"] {
+            width: 80%;
+            padding: 12px;
+            margin-bottom: 15px;
+            margin-top: 5px;
+            border: 1px solid black;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-container input[type="email"]:focus,
+        .form-container input[type="password"]:focus {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: black;
+            border: 1px solid #007bff;
+            outline: none;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: rgba(0, 123, 255, 0.7);
+            width: 30%;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: rgba(0, 123, 255, 1);
+        }
+
+        .error {
+            color: #f44336;
+            font-size: 1rem;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        .center-text {
+            text-align: center;
+            font-size: 1rem;
+            color: black;
+            font-weight: 400;
+        }
+
+        a {
+            color: rgba(0, 123, 255, 0.9);
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: rgba(0, 123, 255, 1);
+            text-decoration: underline;
+        }
+/* Form */
+
 .head
 {
   background-color: transparent;
@@ -21,56 +137,6 @@ body
   height: 30%;
 }
 
-/* Login-form */
-.form-container {
-  position: absolute;
-  top: 50%;
-background-color: rgba(255, 255, 255, 0.8);
-padding: 20px;
-border-radius: 10px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-max-width: 400px;
-width: 100%;
-height:40%;
-}
-
-.form-container h2 {
-text-align: center;
-margin-bottom: 20px;
-}
-
-.form-container label {
-display: block;
-margin-bottom: 5px;
-font-weight: bold;
-}
-.text
-{
-text-align:center;
-}
-
-.form-container input[type="email"],
-.form-container input[type="password"],
-.form-container input[type="submit"]       
-{
-width: 70%;
-padding: 10px;
-margin-bottom: 20px;
-margin-left:33.33;
-border: 1px solid #ccc;
-border-radius: 5px;
-}
-
-.form-container input[type="submit"] {
-background-color: #007BFF;
-color: white;
-border: none;
-cursor: pointer;
-}
-
-.form-container input[type="submit"]:hover {
-background-color: #0056b3;
-}
 /* NavBar */
 
 .bar
@@ -326,11 +392,13 @@ nav {
   background-color: #ceaeae;
   border-radius: 15px;
 }
-.feed1 img {
+.feed2 img {
   border-radius: 50%;
   margin-left: 5%;
-  height: 60px;
-  width: 60px;
+  height: 40%;
+  width: 50%;
+  object-fit: cover;
+  aspect-ratio: 4/4;
 }
 .feed11 {
   display: flex;
@@ -343,10 +411,37 @@ nav {
 h4 {
   font-size: bold;
 }
-/* review */
-.feed {
-  width: 100%;
-  height: 95%;
-  position: relative;
+.finalcontact{
+  display: flex;
+  justify-content: center;
 }
-/* review */
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  font-family: poppins;
+  background-image: linear-gradient(rgb(4, 9, 30, 0.7), rgb(4, 9, 30, 0.7)),
+    url("https://images.unsplash.com/photo-1721756172766-94e8187d2be1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact1 p {
+  text-align: center
+}
+.cbtn{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 1%;
+  background: transparent;
+  cursor: pointer;
+}
