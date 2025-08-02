@@ -11,8 +11,7 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/dash.css">
   <!-- <link rel="stylesheet" href="keyframe.css">    -->
 </head>
 
@@ -26,21 +25,102 @@
           <i class="fas fa-bars"></i>
         </label>
         <!-- Site logo -->
-        <div class="logo">Ayush</div>
+        <div class="logo d-flex align-items-center">
+          <P>Ayush</P>
+        </div>
         <!-- Navigation links -->
-        <ul class="fw-bold">
+        <ul class="nav-list fw-bold d-flex align-items-center">
           <li><a class="active" href="#">How it Works</a></li>
           <li><a href="#">Male</a></li>
           <li><a href="#">Female</a></li>
           <li><a href="#">Pricing</a></li>
-          <li><a href="#"><button class="click rounded-3 p-2 fw-bold" onclick="action()">Login</button></a></li>
+          <li><a href="#"><div class="click d-none d-md-block rounded-circle">
+             <i class="fa-solid fa-user fa-2x"></i>
+          </div></a></li>
         </ul>
         <div class="right d-block d-md-none">
-          <button class="logo-button rounded-2 p-1" onclick="action()">Login</button>
+          <div class="logo-button border-0">
+            <img src="images/banner/pexels-picjumbo-com-55570-196664.jpg" alt="">
+          </div>
         </div>
       </nav>
-      
-    <section class="container-fluid">
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-3 p-3">
+              <div class="border p-4">
+                <p>Filters</p>
+                <div class="gender d-flex flex-column align-items-start gap-2">
+                  <p>Gender</p>
+                  <div>
+                    <input type="checkbox" name="male" id="">
+                    <span>Male</span>
+                    <br>
+                    <input type="checkbox" name="female" id="">
+                    <span>Female</span>
+                  </div>
+                  </div>
+                  <br>
+                  <div class="age">
+                    <p>Age</p>
+                    <div class="d-flex gap-3">
+                      <span>Min</span>
+                      <input type="text" class="range-min">
+                      <span>-</span>
+                      <span>Max</span>
+                      <input type="text" class="range-max">
+                    </div>
+                  </div>
+                  <br>
+                  <div class="country">
+                    <p>Country</p>
+                    <select id="country" class="form-select">
+                  <option value="" disabled selected>Select Country</option>
+                </select>
+                </div>
+                <br>
+                <div class="religion d-flex flex-column align-items-start gap-2">
+                  <p>Religion</p>
+                  <div>
+                    <input type="checkbox" name="hindu" id="">
+                    <span>Hinduism</span>
+                    <br>
+                    <input type="checkbox" name="buddhist" id="">
+                    <span>Buddhism</span>
+                    <br>
+                    <input type="checkbox" name="christ" id="">
+                    <span>Christianity</span>
+                    <br>
+                    <input type="checkbox" name="muslim" id="">
+                    <span>Muslim</span>
+                    <br>
+                    <input type="checkbox" name="other" id="">
+                    <span>Others</span>
+                  </div>
+                  </div>
+                  <br>
+                  <div class="status">
+                    <p>Status</p>
+                    <select id="country" class="form-select">
+                  <option value="">Never Married</option>
+                  <option value="">Divorced</option>
+                  <option value="">Widowed</option>
+                </select>
+                </div>
+              </div>
+                </div>
+
+
+            <div class="col-9 p-3">
+              <div class="row id">
+
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+    <!-- <section class="container-fluid">
               <div class="finalcontact">
                     <div class="row contact">
                       <div class="col d-flex flex-column justify-content-center align-items-center fs-2 text-center contact1">
@@ -58,11 +138,12 @@
                       </div>
                     </div>
                   </div>
-                  </section>
+                  </section> -->
+
     <!-- Footer -->
-    <footer class="row d-block g-0 m-0 d-md-none d-flex border p-0">
+    <footer class="foot row g-0 m-0 d-flex border p-3">
               <div class="home p-0 col-3 d-flex text-center align-items-center justify-content-center"><i class="fa-solid fa-house fa-2x"></i></div>
-              <div class="menu p-0 col-3 d-flex text-center align-items-center justify-content-center"></div>
+              <div class="menu p-0 col-3 d-flex text-center align-items-center justify-content-center"><i class="fa-solid fa-house fa-2x"></i></div>
               <div class="save p-0 col-3 d-flex text-center align-items-center justify-content-center"><i class="fa-solid fa-bookmark fa-2x"></i></div>
               <div class="account p-0 col-3 d-flex text-center align-items-center justify-content-center"><i class="fa-solid fa-user fa-2x"></i></div>
             </footer>
@@ -70,9 +151,9 @@
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="js/slider.js"></script>
   <script src="js/success.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/profile.js"></script>
 </body>
 
 </html>

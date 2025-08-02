@@ -157,7 +157,7 @@ nav {
     font-size: 25px;
     line-height: 80px;
     font-weight: bold;
-    padding: 0;
+    border: 1px solid red;
 }
   .logo-button{
     color: black;
