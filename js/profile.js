@@ -927,7 +927,7 @@ profiles.forEach(profile => {
           </div>
         </div>
         <div class="card-footer bg-white border-0 pt-0">
-          <button class="btn btn-sm btn-outline-primary w-100">
+          <button class="btn btn-sm btn-outline-primary w-100" onclick="window.location.href='profile-page.html'">
             View Profile
           </button>
         </div>
